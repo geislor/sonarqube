@@ -663,6 +663,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/helper-string-parser@npm:^7.23.4":
+  version: 7.23.4
+  resolution: "@babel/helper-string-parser@npm:7.23.4"
+  checksum: c0641144cf1a7e7dc93f3d5f16d5327465b6cf5d036b48be61ecba41e1eece161b48f46b7f960951b67f8c3533ce506b16dece576baef4d8b3b49f8c65410f90
+  languageName: node
+  linkType: hard
+
 "@babel/helper-validator-identifier@npm:^7.10.4":
   version: 7.10.4
   resolution: "@babel/helper-validator-identifier@npm:7.10.4"
@@ -674,6 +681,13 @@ __metadata:
   version: 7.16.7
   resolution: "@babel/helper-validator-identifier@npm:7.16.7"
   checksum: dbb3db9d184343152520a209b5684f5e0ed416109cde82b428ca9c759c29b10c7450657785a8b5c5256aa74acc6da491c1f0cf6b784939f7931ef82982051b69
+  languageName: node
+  linkType: hard
+
+"@babel/helper-validator-identifier@npm:^7.22.20":
+  version: 7.22.20
+  resolution: "@babel/helper-validator-identifier@npm:7.22.20"
+  checksum: 136412784d9428266bcdd4d91c32bcf9ff0e8d25534a9d94b044f77fe76bc50f941a90319b05aafd1ec04f7d127cd57a179a3716009ff7f3412ef835ada95bdc
   languageName: node
   linkType: hard
 
@@ -2028,6 +2042,17 @@ __metadata:
     lodash: ^4.17.19
     to-fast-properties: ^2.0.0
   checksum: de2c1302f7c459d5786e8e3775c9162c07db86b4abac73368d4dfaea876bd4284241793b1f096685f74baab17b34f6c00d4a7ff03fb1bbea4d9fc46c9cae4b33
+  languageName: node
+  linkType: hard
+
+"@babel/types@npm:^7.15.4":
+  version: 7.23.5
+  resolution: "@babel/types@npm:7.23.5"
+  dependencies:
+    "@babel/helper-string-parser": ^7.23.4
+    "@babel/helper-validator-identifier": ^7.22.20
+    to-fast-properties: ^2.0.0
+  checksum: 3d21774480a459ef13b41c2e32700d927af649e04b70c5d164814d8e04ab584af66a93330602c2925e1a6925c2b829cc153418a613a4e7d79d011be1f29ad4b2
   languageName: node
   linkType: hard
 
@@ -9349,6 +9374,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fs-extra@npm:^10.1.0":
+  version: 10.1.0
+  resolution: "fs-extra@npm:10.1.0"
+  dependencies:
+    graceful-fs: ^4.2.0
+    jsonfile: ^6.0.1
+    universalify: ^2.0.0
+  checksum: dc94ab37096f813cc3ca12f0f1b5ad6744dfed9ed21e953d72530d103cea193c2f81584a39e9dee1bea36de5ee66805678c0dddc048e8af1427ac19c00fffc50
+  languageName: node
+  linkType: hard
+
 "fs-extra@npm:^8.1.0":
   version: 8.1.0
   resolution: "fs-extra@npm:8.1.0"
@@ -10844,9 +10880,9 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"hast-util-select@npm:4.0.0":
-  version: 4.0.0
-  resolution: "hast-util-select@npm:4.0.0"
+"hast-util-select@npm:4.0.2":
+  version: 4.0.2
+  resolution: "hast-util-select@npm:4.0.2"
   dependencies:
     bcp-47-match: ^1.0.0
     comma-separated-tokens: ^1.0.0
@@ -10857,12 +10893,12 @@ fsevents@~2.1.2:
     hast-util-to-string: ^1.0.0
     hast-util-whitespace: ^1.0.0
     not: ^0.1.0
-    nth-check: ^1.0.0
+    nth-check: ^2.0.0
     property-information: ^5.0.0
     space-separated-tokens: ^1.0.0
     unist-util-visit: ^2.0.0
     zwitch: ^1.0.0
-  checksum: 2e0cf98b90a125401616ed1bb7f2b658c2d9dcbd2ed6e9d4b0e35204f0ec86d474f9720fcb8c895c419d0fa4006acf1b175606188f9a114971062b76d3423367
+  checksum: ce02cfb8fda2c5dfc48884c99bc38b0e97e6d34debe0b71b78274896f2e1073971965cd54173ab87f31edfc1e60c4c4da0196a650c2eaa45140b5904edc646bf
   languageName: node
   linkType: hard
 
@@ -15046,12 +15082,21 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"nth-check@npm:^1.0.0, nth-check@npm:^1.0.1, nth-check@npm:^1.0.2, nth-check@npm:~1.0.1":
+"nth-check@npm:^1.0.1, nth-check@npm:^1.0.2, nth-check@npm:~1.0.1":
   version: 1.0.2
   resolution: "nth-check@npm:1.0.2"
   dependencies:
     boolbase: ~1.0.0
   checksum: 59e115fdd75b971d0030f42ada3aac23898d4c03aa13371fa8b3339d23461d1badf3fde5aad251fb956aaa75c0a3b9bfcd07c08a34a83b4f9dadfdce1d19337c
+  languageName: node
+  linkType: hard
+
+"nth-check@npm:^2.0.0":
+  version: 2.1.1
+  resolution: "nth-check@npm:2.1.1"
+  dependencies:
+    boolbase: ^1.0.0
+  checksum: 5afc3dafcd1573b08877ca8e6148c52abd565f1d06b1eb08caf982e3fa289a82f2cae697ffb55b5021e146d60443f1590a5d6b944844e944714a5b549675bcd3
   languageName: node
   linkType: hard
 
@@ -19012,7 +19057,7 @@ fsevents@~2.1.2:
     gatsby-source-filesystem: 2.1.57
     gatsby-transformer-remark: 2.6.59
     glob-promise: 4.2.2
-    hast-util-select: 4.0.0
+    hast-util-select: 4.0.2
     jest: 27.5.1
     jest-fetch-mock: 2.1.2
     lodash: 4.17.21
@@ -20346,7 +20391,7 @@ fsevents@~2.1.2:
 
 "typescript@patch:typescript@4.6.3#~builtin<compat/typescript>":
   version: 4.6.3
-  resolution: "typescript@patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"
+  resolution: "typescript@patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=701156"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
