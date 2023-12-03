@@ -663,6 +663,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/helper-string-parser@npm:^7.23.4":
+  version: 7.23.4
+  resolution: "@babel/helper-string-parser@npm:7.23.4"
+  checksum: c0641144cf1a7e7dc93f3d5f16d5327465b6cf5d036b48be61ecba41e1eece161b48f46b7f960951b67f8c3533ce506b16dece576baef4d8b3b49f8c65410f90
+  languageName: node
+  linkType: hard
+
 "@babel/helper-validator-identifier@npm:^7.10.4":
   version: 7.10.4
   resolution: "@babel/helper-validator-identifier@npm:7.10.4"
@@ -674,6 +681,13 @@ __metadata:
   version: 7.16.7
   resolution: "@babel/helper-validator-identifier@npm:7.16.7"
   checksum: dbb3db9d184343152520a209b5684f5e0ed416109cde82b428ca9c759c29b10c7450657785a8b5c5256aa74acc6da491c1f0cf6b784939f7931ef82982051b69
+  languageName: node
+  linkType: hard
+
+"@babel/helper-validator-identifier@npm:^7.22.20":
+  version: 7.22.20
+  resolution: "@babel/helper-validator-identifier@npm:7.22.20"
+  checksum: 136412784d9428266bcdd4d91c32bcf9ff0e8d25534a9d94b044f77fe76bc50f941a90319b05aafd1ec04f7d127cd57a179a3716009ff7f3412ef835ada95bdc
   languageName: node
   linkType: hard
 
@@ -2031,6 +2045,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/types@npm:^7.15.4":
+  version: 7.23.5
+  resolution: "@babel/types@npm:7.23.5"
+  dependencies:
+    "@babel/helper-string-parser": ^7.23.4
+    "@babel/helper-validator-identifier": ^7.22.20
+    to-fast-properties: ^2.0.0
+  checksum: 3d21774480a459ef13b41c2e32700d927af649e04b70c5d164814d8e04ab584af66a93330602c2925e1a6925c2b829cc153418a613a4e7d79d011be1f29ad4b2
+  languageName: node
+  linkType: hard
+
 "@babel/types@npm:^7.16.7, @babel/types@npm:^7.17.0, @babel/types@npm:^7.3.3":
   version: 7.17.0
   resolution: "@babel/types@npm:7.17.0"
@@ -2379,12 +2404,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mapbox/hast-util-table-cell-style@npm:^0.1.3":
-  version: 0.1.3
-  resolution: "@mapbox/hast-util-table-cell-style@npm:0.1.3"
+"@mapbox/hast-util-table-cell-style@npm:^0.2.0":
+  version: 0.2.1
+  resolution: "@mapbox/hast-util-table-cell-style@npm:0.2.1"
   dependencies:
-    unist-util-visit: ^1.3.0
-  checksum: 4e563a274ae54bfb15f7d12fb711bbfc9579ff2704149cc8dddbc36b3d007a1cdefa993462c767b6b3da5d392b848680e9cc466b282ed9df8f16b23df685062c
+    unist-util-visit: ^1.4.1
+  checksum: d7151365d10cb8a02f08973064fd2619b4ce1dab4139c8c5e9ee21f9c364ecf5e2fae066136e815cf8035496070c6280bb5215b5bfe9c9cdc804b50025e94fa2
   languageName: node
   linkType: hard
 
@@ -9346,6 +9371,17 @@ __metadata:
     jsonfile: ^6.0.1
     universalify: ^2.0.0
   checksum: 5285a3d8f34b917cf2b66af8c231a40c1623626e9d701a20051d3337be16c6d7cac94441c8b3732d47a92a2a027886ca93c69b6a4ae6aee3c89650d2a8880c0a
+  languageName: node
+  linkType: hard
+
+"fs-extra@npm:^10.1.0":
+  version: 10.1.0
+  resolution: "fs-extra@npm:10.1.0"
+  dependencies:
+    graceful-fs: ^4.2.0
+    jsonfile: ^6.0.1
+    universalify: ^2.0.0
+  checksum: dc94ab37096f813cc3ca12f0f1b5ad6744dfed9ed21e953d72530d103cea193c2f81584a39e9dee1bea36de5ee66805678c0dddc048e8af1427ac19c00fffc50
   languageName: node
   linkType: hard
 
@@ -17721,13 +17757,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"rehype-react@npm:6.1.0":
-  version: 6.1.0
-  resolution: "rehype-react@npm:6.1.0"
+"rehype-react@npm:6.2.1":
+  version: 6.2.1
+  resolution: "rehype-react@npm:6.2.1"
   dependencies:
-    "@mapbox/hast-util-table-cell-style": ^0.1.3
+    "@mapbox/hast-util-table-cell-style": ^0.2.0
     hast-to-hyperscript: ^9.0.0
-  checksum: c6092ed93de0aa820d226c3aa58c77eb918f834e386220bb7837fea5a15eb4733b83bf906d9276e5c5c8c4db120c7f16a1fb5825fcb516e9f68277e8a5a0b3b1
+  checksum: 7f16a2cfc38d1fe0d40944f8f27309fc16440d69d3bb53f8e0ca6d6825572f7d1cac4212193a4f4de456b2342fea66ea0919648ad09c0663cfb1e4ca12bed647
   languageName: node
   linkType: hard
 
@@ -19023,7 +19059,7 @@ fsevents@~2.1.2:
     react-helmet: 5.2.1
     react-test-renderer: 16.8.5
     react-typography: 0.16.20
-    rehype-react: 6.1.0
+    rehype-react: 6.2.1
     remark: 11.0.2
     typescript: 4.6.3
     typography: 0.16.21
@@ -20346,7 +20382,7 @@ fsevents@~2.1.2:
 
 "typescript@patch:typescript@4.6.3#~builtin<compat/typescript>":
   version: 4.6.3
-  resolution: "typescript@patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"
+  resolution: "typescript@patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=701156"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
@@ -20686,7 +20722,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"unist-util-visit@npm:^1.0.0, unist-util-visit@npm:^1.1.0, unist-util-visit@npm:^1.3.0, unist-util-visit@npm:^1.4.1":
+"unist-util-visit@npm:^1.0.0, unist-util-visit@npm:^1.1.0, unist-util-visit@npm:^1.4.1":
   version: 1.4.1
   resolution: "unist-util-visit@npm:1.4.1"
   dependencies:
