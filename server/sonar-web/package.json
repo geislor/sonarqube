@@ -18,7 +18,7 @@
     "d3-zoom": "1.8.3",
     "date-fns": "2.29.2",
     "diff": "5.1.0",
-    "dompurify": "2.3.10",
+    "dompurify": "2.4.9",
     "formik": "1.2.0",
     "lodash": "4.17.21",
     "lunr": "2.3.9",
